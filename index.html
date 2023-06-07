@@ -7,11 +7,15 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description"
       content="PUNKT KONSULTACYJNO-DIAGNOSTYCZNY - PODSTAWOWE INFORMACJE. Zapraszamy do korzystania z poradnictwa i testowania w kierunku zakażenia wirusem HIV, HCV i kiły. Badania są anonimowe, bezpłatne i nie wymagają skierowania. Działalność finansowana ze środków Krajowego Centrum ds. AIDS. Punkt pracuje we wtorki i czwartki. Kontakt telefoniczny pod nr 503 147 303. Rejestracja NZOZ nie udziela informacji na temat testowania w kierunku zakażenia wirusem HIV, HCV i kiły. Więcej informacji na stronie Krajowego Centrum ds. AIDS. Szukasz odpowiedzi na trudne pytania, potrzebujesz informacji - napisz lub zadzwoń. Ogólnopolski telefon zaufania HIV/AIDS 800 888 448. CO TO JEST HIV I AIDS? HIV to wirus upośledzenia odporności. AIDS to zespół nabytego upośledzenia odporności, pojawiający się po wielu latach zakażenia HIV. JAK MOŻNA SIĘ ZAKAZIĆ HIV? Istnieją 3 drogi przenoszenia wirusa HIV: krew, kontakty seksualne oraz z matki na dziecko. TEST NA OBECNOŚĆ HIV. Zakażenie HIV rozpoznać można po wykonaniu testu w kierunku obecności przeciwciał anty-HIV. LECZENIE HIV/AIDS. Publikacje i broszury dla osób zakażonych wirusem HIV. INNE ZAKAŻENIA I CHOROBY PRZENOSZONE DROGĄ PŁCIOWĄ. Ulotki dotyczące zakażeń przenoszonych drogą płciową. Więcej informacji na stronie Krajowego Centrum ds. AIDS." />
+   <link href="img/icons/favicon.ico" rel="icon">
    <title>Punkt Konsultacyjno-Diagnostyczny</title>
    <link rel="stylesheet" href="css/style.css">
    <script defer src="js/script.js"></script>
 
    <!-- STYLES -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,50 +41,327 @@
          <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                <li>
-                  <NavLink class="nav-link scrollto" to="/" onClick={handleMobileNavItemClick}>
+                  <a class="nav-link scrollto" href="/" onClick={handleMobileNavItemClick}>
                      STRONA GŁÓWNA
-                  </NavLink>
+                  </a>
                </li>
                <li>
-                  <NavLink class="nav-link scrollto" to="news" onClick={handleMobileNavItemClick}>
+                  <a class="nav-link scrollto" href="news.html" onClick={handleMobileNavItemClick}>
                      AKTUALNOŚCI
-                  </NavLink>
+                  </a>
                </li>
                <li>
-                  <NavLink class="nav-link scrollto" to="what" onClick={handleMobileNavItemClick}>
+                  <a class="nav-link scrollto" href="what.html" onClick={handleMobileNavItemClick}>
                      HIV I AIDS
-                  </NavLink>
+                  </a>
                </li>
                <li>
-                  <NavLink class="nav-link scrollto" to="how" onClick={handleMobileNavItemClick}>
+                  <a class="nav-link scrollto" href="hov.html" onClick={handleMobileNavItemClick}>
                      SPOSOBY ZAKAŻENIA
-                  </NavLink>
+                  </a>
                </li>
                <li>
-                  <NavLink class="nav-link scrollto" to="hiv" onClick={handleMobileNavItemClick}>
+                  <a class="nav-link scrollto" href="hiv.html" onClick={handleMobileNavItemClick}>
                      TEST NA OBECNOŚĆ HIV
-                  </NavLink>
+                  </a>
                </li>
                <li>
-                  <NavLink class="nav-link scrollto" to="treatments" onClick={handleMobileNavItemClick}>
+                  <a class="nav-link scrollto" href="treatments.html" onClick={handleMobileNavItemClick}>
                      LECZENIE HIV/AIDS
-                  </NavLink>
+                  </a>
                </li>
                <li>
-                  <NavLink class="nav-link scrollto" to="diseases" onClick={handleMobileNavItemClick}>
+                  <a class="nav-link scrollto" href="diseases.html" onClick={handleMobileNavItemClick}>
                      INNE ZAKAŻENIA I CHOROBY
-                  </NavLink>
+                  </a>
                </li>
                <li>
-                  <NavLink class="nav-link scrollto" to="materials" onClick={handleMobileNavItemClick}>
+                  <a class="nav-link scrollto" href="materials.html" onClick={handleMobileNavItemClick}>
                      MATERIAŁY EDUKACYJNE
-                  </NavLink>
+                  </a>
                </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
          </nav>
       </div>
-   </header>
+   </header>r>
+
+   <!-- HERO -->
+   <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+         <h1 data-aos="fade-down" data-aos-delay="500">
+            Zapraszamy
+         </h1>
+         <h2 data-aos="fade-left" data-aos-delay="1000">
+            do korzystania z poradnictwa i testowania w kierunku zakażenia wirusem HIV, HCV i kiły
+         </h2>
+         <div data-aos="fade-in" data-aos-delay="1500">
+            <a href="#about" class="btn-get-started scrollto">
+               więcej szczegółów
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- WHY US -->
+   <section id="why-us" class="why-us">
+      <div class="container">
+         <div class="row">
+            <section class="section-title">
+               <h2 data-aos="fade-down">Badania wykonywane w naszym punkcie są:</h2>
+            </section>
+
+            <div class="col-lg d-flex align-items-stretch">
+               <div class="icon-boxes d-flex flex-column justify-content-center">
+                  <div class="row">
+                     <div data-aos="fade-down" data-aos-delay="100" class="col-lg-4 d-flex align-items-stretch">
+                        <div class="icon-box mt-4 mt-xl-0">
+                           <i class="bi bi-person-lock"></i>
+                           <h4>Anonimowe</h4>
+                           <p>
+                              Nikt nie będzie Cię pytał o imię ani nazwisko - otrzymasz jedynie hasło, którym
+                              oznaczony będzie Twój test. Przy odbiorze wyników badań doradca wyjaśni Twoje
+                              wątpliwości
+                           </p>
+                        </div>
+                     </div>
+                     <div data-aos="fade-down" data-aos-delay="200" class="col-lg-4 d-flex align-items-stretch">
+                        <div class="icon-box mt-4 mt-xl-0">
+                           <i class="bi bi-piggy-bank"></i>
+                           <h4>Bezpłatne</h4>
+                           <p>
+                              Nie nakładamy żadnych opłat za pobranie próbek potrzebnych do badania, ani za wykonanie
+                              testów. Wszystko jest całkowicie darmowe
+                           </p>
+                        </div>
+                     </div>
+                     <div data-aos="fade-down" data-aos-delay="300" class="col-lg-4 d-flex align-items-stretch">
+                        <div class="icon-box mt-4 mt-xl-0">
+                           <i class="bi bi-file-earmark-text"></i>
+                           <h4>Nie wymagają skierowania</h4>
+                           <p>
+                              Możesz zarejestrować się przez telefon i przyjść bez potrzeby uprzedniej konsultacji z
+                              innym lekarzem czy to specjalistą, czy pierwszego kontaktu
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ABOUT -->
+   <section id="about" class="about">
+      <div class="container-fluid">
+         <div class="row">
+            <div data-aos="fade-right"
+               class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            </div>
+
+            <div data-aos="fade-left"
+               class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+               <h3>
+                  Działalność naszego Punktu jest finansowana ze środków{' '}
+                  <a href="https://aids.gov.pl/" target="_blank" rel="noopener noreferrer">
+                     Krajowego Centrum ds. AIDS
+                  </a>
+                  , obecnie w ramach realizacji projektu na lata 2022-2024
+               </h3>
+               <p></p>
+
+               <div class="icon-box">
+                  <div class="icon">
+                     <i class="bi bi-alarm"></i>
+                  </div>
+                  <h4 class="title">Godziny otwarcia:</h4>
+                  <p class="description no-mb">wtorek: 16:00 - 19.00</p>
+                  <p class="description">czwartek: 09.00 - 11.00</p>
+               </div>
+
+               <div class="icon-box">
+                  <div class="icon">
+                     <i class="bi bi-person"></i>
+                  </div>
+                  <h4 class="title">Uwaga!</h4>
+                  <p class="description">
+                     W celu zapewnienia wysokiej jakości poradnictwa, ostatni pacjent przyjmowany jest pół godziny
+                     przed zamknięciem Punktu.
+                  </p>
+               </div>
+
+               <div class="icon-box">
+                  <div class="icon">
+                     <i class="bi bi-phone"></i>
+                  </div>
+                  <h4 class="title">Zapraszamy do kontaktu telefonicznego</h4>
+                  <div class="icon-box-container">
+                     <div>
+                        <p class="description no-mb">z doradcami HIV/AIDS</p>
+                     </div>
+                     <a class="btn-tel" href="tel:+48503147303">
+                        <i class="bi bi-telephone"></i>503 147 303
+                     </a>
+                  </div>
+               </div>
+
+               <div class="icon-box">
+                  <div class="icon">
+                     <i class="bi bi-file-text"></i>
+                  </div>
+                  <h4 class="title">Uwaga!</h4>
+                  <p class="description">
+                     Rejestracja NZOZ nie udziela informacji na temat testowania w kierunku zakażenia wirusem HIV,
+                     HCV i kiły. Informacja o tym co warto wiedzieć, zanim podejmiesz decyzję o zrobieniu testu na
+                     HIV jest poniżej.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- INVITE -->
+   <section id="invite" class="invite section-bg">
+      <div class="container">
+         <div class="section-title">
+            <h2 data-aos="fade-down">SERDECZNIE ZAPRASZAMY!</h2>
+            <p>
+               Po szczegółowe informacje zapraszamy na stronę
+               <a href="https://aids.gov.pl/" target="_blank" rel="noopener noreferrer">
+                  Krajowego Centrum ds. AIDS
+               </a>
+            </p>
+            <h5>Szukasz odpowiedzi na trudne pytania, potrzebujesz informacji?</h5>
+         </div>
+
+         <div class="row">
+            <div class="col-lg-4 mt-4">
+               <a href="https://aids.gov.pl/poradnia_internetowa/" target="_blank" rel="noopener noreferrer">
+                  <div data-aos="flip-left" class="card-invite d-flex align-items-center">
+                     <div class="icon">
+                        <i class="bi bi-globe"></i>
+                     </div>
+                     <div class="card-invite-info">
+                        <span>
+                           <h4>Napisz na stronie internetowej</h4>
+                        </span>
+                        <div class="card-hover">
+                           <p>aids.gov.pl/poradnia_internetowa</p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+               <a href="mailto:poradnia@aids.gov.pl">
+                  <div data-aos="flip-left" class="card-invite d-flex align-items-center">
+                     <div class="icon">
+                        <i class="bi bi-envelope-at"></i>
+                     </div>
+                     <div class="card-invite-info">
+                        <span>
+                           <h4>Lub wyślij e-mailem</h4>
+                        </span>
+                        <div class="card-hover">
+                           <p>poradnia@aids.gov.pl</p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+               <a href="tel:+4800888448">
+                  <div data-aos="flip-left" class="card-invite d-flex align-items-center">
+                     <div class="icon">
+                        <i class="bi bi-phone-vibrate"></i>
+                     </div>
+                     <div class="card-invite-info">
+                        <span>
+                           <h4>Lub zadzwoń</h4>
+                        </span>
+                        <div class="card-hover">
+                           <p>800 888 448</p>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="telephone-time mt-5">
+               <i class="bi bi-info-circle"></i>
+               <p class="mb-0 fst-italic">
+                  Ogólnopolski telefon zaufania HIV/AIDS czynny w dni robocze w godzinach 9:00 – 21:00 (połączenie
+                  bezpłatne)
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer>
+      <div class="top-footer">
+         <div class="container">
+            <div class="contact-cards">
+               <a class="contact-card" href="tel:+48503147303">
+                  <i class="bi bi-telephone"></i>
+                  <p class="text-center">503-147-303</p>
+               </a>
+
+               <a class="contact-card" href="mailto:rejestracja@snr.org.pl">
+                  <i class="bi bi-envelope-at"></i>
+                  <p class="text-center">rejestracja@snr.org.pl</p>
+               </a>
+
+               <a class="contact-card" href="https://goo.gl/maps/aWWFrQvb7QWLpdQd8" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-geo-alt"></i>
+                  <p class="text-center">
+                     Karczówkowska 36 <br /> 25-711 Kielce
+                  </p>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="bottom-footer">
+         <div class="container">
+            <div class="logo-cards">
+               <div class="logo-card">
+                  <a class="logo-img" href="https://nzoz.nadziejarodzinie.org.pl/" target="_blank"
+                     rel="noopener noreferrer">
+                     <div class="img-box">
+                        <img src="img/logo-nzoz.png" alt="Logo NZOZ" />
+                     </div>
+                     <p class="text-center">
+                        Punkt Konsultacyjno-Diagnostyczny <br /> działa w ramach Poradni NZOZ "Nadzieja Rodzinie"
+                     </p>
+                  </a>
+               </div>
+
+               <div class="logo-card">
+                  <a class="logo-img" href="https://nadziejarodzinie.org.pl/" target="_blank" rel="noopener noreferrer">
+                     <div class="img-box">
+                        <img src="img/logo-snr.png" alt="Logo SNR" />
+                     </div>
+                     <p class="text-center">
+                        Prowadzonej przez <br /> Stowarzyszenie "Nadzieja Rodzinie"
+                     </p>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- SCRIPTS -->
+   <script defer src="js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </body>
 
 </html>
