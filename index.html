@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="PUNKT KONSULTACYJNO-DIAGNOSTYCZNY - PODSTAWOWE INFORMACJE. Zapraszamy do korzystania z poradnictwa i testowania w kierunku zakażenia wirusem HIV, HCV i kiły. Badania są anonimowe, bezpłatne i nie wymagają skierowania. Działalność finansowana ze środków Krajowego Centrum ds. AIDS. Punkt pracuje we wtorki i czwartki. Kontakt telefoniczny pod nr 503 147 303. Rejestracja NZOZ nie udziela informacji na temat testowania w kierunku zakażenia wirusem HIV, HCV i kiły. Więcej informacji na stronie Krajowego Centrum ds. AIDS. Szukasz odpowiedzi na trudne pytania, potrzebujesz informacji - napisz lub zadzwoń. Ogólnopolski telefon zaufania HIV/AIDS 800 888 448. CO TO JEST HIV I AIDS? HIV to wirus upośledzenia odporności. AIDS to zespół nabytego upośledzenia odporności, pojawiający się po wielu latach zakażenia HIV. JAK MOŻNA SIĘ ZAKAZIĆ HIV? Istnieją 3 drogi przenoszenia wirusa HIV: krew, kontakty seksualne oraz z matki na dziecko. TEST NA OBECNOŚĆ HIV. Zakażenie HIV rozpoznać można po wykonaniu testu w kierunku obecności przeciwciał anty-HIV. LECZENIE HIV/AIDS. Publikacje i broszury dla osób zakażonych wirusem HIV. INNE ZAKAŻENIA I CHOROBY PRZENOSZONE DROGĄ PŁCIOWĄ. Ulotki dotyczące zakażeń przenoszonych drogą płciową. Więcej informacji na stronie Krajowego Centrum ds. AIDS." />
+   <title>Punkt Konsultacyjno-Diagnostyczny</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script defer src="js/script.js"></script>
+
+   <!-- STYLES -->
+</head>
+
+<body>
+   <!-- HEADER -->
+   <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container">
+         <div class="contact-info d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo-pkd logo me-auto">
+               <img src='img/logo.png' alt="Logo" class="img-fluid" />
+            </a>
+            <h1 class="title logo me-auto">
+               <a href="/">Punkt Konsultacyjno-Diagnostyczny</a>
+            </h1>
+            <a class="btn-tel" href="tel:+48503147303">
+               <i class="bi bi-telephone"></i>503 147 303
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+         <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+               <li>
+                  <NavLink class="nav-link scrollto" to="/" onClick={handleMobileNavItemClick}>
+                     STRONA GŁÓWNA
+                  </NavLink>
+               </li>
+               <li>
+                  <NavLink class="nav-link scrollto" to="news" onClick={handleMobileNavItemClick}>
+                     AKTUALNOŚCI
+                  </NavLink>
+               </li>
+               <li>
+                  <NavLink class="nav-link scrollto" to="what" onClick={handleMobileNavItemClick}>
+                     HIV I AIDS
+                  </NavLink>
+               </li>
+               <li>
+                  <NavLink class="nav-link scrollto" to="how" onClick={handleMobileNavItemClick}>
+                     SPOSOBY ZAKAŻENIA
+                  </NavLink>
+               </li>
+               <li>
+                  <NavLink class="nav-link scrollto" to="hiv" onClick={handleMobileNavItemClick}>
+                     TEST NA OBECNOŚĆ HIV
+                  </NavLink>
+               </li>
+               <li>
+                  <NavLink class="nav-link scrollto" to="treatments" onClick={handleMobileNavItemClick}>
+                     LECZENIE HIV/AIDS
+                  </NavLink>
+               </li>
+               <li>
+                  <NavLink class="nav-link scrollto" to="diseases" onClick={handleMobileNavItemClick}>
+                     INNE ZAKAŻENIA I CHOROBY
+                  </NavLink>
+               </li>
+               <li>
+                  <NavLink class="nav-link scrollto" to="materials" onClick={handleMobileNavItemClick}>
+                     MATERIAŁY EDUKACYJNE
+                  </NavLink>
+               </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+         </nav>
+      </div>
+   </header>
+</body>
+
+</html>
