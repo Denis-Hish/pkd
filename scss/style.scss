@@ -1429,17 +1429,13 @@ section {
       .w-link {
          display: inline-block;
          color: var(--color-blue-1);
-         padding: 0;
-         margin-left: 5px;
-         position: relative;
-         width: 23px;
-         height: 23px;
 
          i {
             position: absolute;
-            top: 0;
+            top: -5px;
             left: 0;
             font-size: 20px;
+            margin-left: 5px;
          }
       }
 
@@ -1471,6 +1467,36 @@ section {
          }
       }
    }
+}
+
+.pkd-tooltip {
+   position: relative;
+   display: inline-block;
+   // border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+   cursor: pointer;
+}
+
+/* Tooltip text */
+.pkd-tooltip .pkd-tooltiptext {
+   visibility: hidden;
+   width: 40vw;
+   background-color: var(--color-blue-1);
+   color: #fff;
+   text-align: center;
+   padding: 5px 0;
+   border-radius: 6px;
+   bottom: 100%;
+   left: 50%;
+   margin-left: calc((50vw / 2) * -1); /* Use half of the width (120/2 = 60), to center the tooltip */
+
+   /* Position the tooltip text - see examples below! */
+   position: absolute;
+   z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.pkd-tooltip:hover .pkd-tooltiptext {
+   visibility: visible;
 }
 
 /*--------------------------------------------------------------

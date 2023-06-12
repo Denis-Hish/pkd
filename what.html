@@ -16,6 +16,15 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- Vendor CSS Files -->
+   <link href="css/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+   <link href="css/vendor/animate.css/animate.min.css" rel="stylesheet">
+   <link href="css/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+   <link href="css/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="css/vendor/remixicon/remixicon.css" rel="stylesheet">
+   <link href="css/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -183,7 +192,280 @@
                <h6 data-aos="fade-up">Zakażenie HIV rozpoznać można tylko po wykonaniu testu w kierunku HIV</h6>
             </div>
 
-            <AccordionComponent />
+            <div class="accordion-component">
+               <div class="accordion" id="accordionFlushExample">
+                  <div class="accordion-item" data-aos="fade-up">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                           <i class="bx bx-help-circle icon-help"></i>
+                           <h2>Co to jest "test na HIV"?</h2>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <p>Ten test nie wykrywa samego wirusa HIV, nie wykrywa też AIDS.</p>
+                           <p>
+                              Test wykrywa przeciwciała skierowane przeciwko wirusowi, produkowane przez układ
+                              odpornościowy
+                              człowieka zakażonego HIV. Wyprodukowanie przeciwciał w takiej ilości, by mogły być
+                              zauważone przez
+                              test wymaga czasu (ten czas nazywany jest okienkiem serologicznym).
+                           </p>
+                           <p>We wszystkich laboratoriach wykonywane są tak zwane testy przesiewowe.</p>
+                           <p>
+                              W ramach laboratoryjnej diagnostyki zakażenia HIV zaleca się stosowanie testów
+                              serologicznych tzw.
+                              IV generacji, które umożliwiają wykrycie antygenu p24 HIV (typowo po 2 tygodniach od
+                              zakażenia)
+                              oraz przeciwciał anty-HIV 1/2 (po 4-12 tygodniach od zakażenia).
+                           </p>
+                           <p>
+                              Obecnie nie zaleca się stosowania w laboratoryjnych badaniach przesiewowych testów tzw.
+                              III
+                              generacji (z wyjątkiem tzw. szybkich testów), bowiem pozwalają one na wykrycie jedynie
+                              przeciwciał
+                              anty-HIV 1/2 (okno diagnostyczne 12 tygodni).
+                           </p>
+                           <p>
+                              Ujemny wynik testu przesiewowego IV generacji pozwala zakończyć diagnostykę po 6
+                              tygodniach od
+                              ekspozycji.
+                              <span class="pkd-tooltip">
+                                 <a href="doc/2/zalecenia_2022.pdf" class="w-link" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-question-circle"></i>
+                                 </a>
+                                 <span class="pkd-tooltiptext">Zasady opieki nad osobami zakażonymi HIV. Zalecenia
+                                    Polskiego Towarzystwa
+                                    Naukowego
+                                    AIDS2022, s.11 dostęp 10.11.2022</span>
+                              </span>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                           <i class="bx bx-help-circle icon-help"></i>
+                           <h2>Jak wykonywany jest test na HIV?</h2>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <p>
+                              Wykonanie testu wymaga pobrania niewielkiej próbki krwi. Na ogół nakłuwa się żyłę w
+                              zgięciu
+                              łokciowym. Nie trzeba być przed tym na czczo.
+                           </p>
+                           <p>W Polsce do pobierania krwi używa się zawsze sterylnych, jednorazowych igieł i strzykawek.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseThree" aria-expanded="false"
+                           aria-controls="flush-collapseThree">
+                           <i class="bx bx-help-circle icon-help"></i>
+                           <h2>Jak długo czeka się na wynik testu?</h2>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <p>
+                              W zależności od tego, gdzie wykonuje się test, czas oczekiwania na wynik to jeden do kilku
+                              dni.
+                              Jeżeli wynik testu przesiewowego okaże się dodatni, wówczas konieczne będzie wysłanie krwi
+                              do
+                              laboratorium wykonującego testy potwierdzające zakażenie, to znaczy testy Western blot, co
+                              może się
+                              wiązać z dłuższym oczekiwaniem na wynik.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseFour" aria-expanded="false"
+                           aria-controls="flush-collapseFour">
+                           <i class="bx bx-help-circle icon-help"></i>
+                           <h2>Co oznacza ujemny wynik testu?</h2>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <p>
+                              Wynik ujemny (negatywny) testu przesiewowego oznacza, iż w badanej krwi nie znaleziono
+                              przeciwciał
+                              przeciwko wirusowi HIV. Jeśli przez 6 tygodni poprzedzających wykonanie testu nie było
+                              żadnych
+                              sytuacji, które mogłyby doprowadzić do zakażenia HIV (na przykład kontaktów seksualnych z
+                              osobami,
+                              które nie robiły sobie testu i nie wiedzą, czy są zakażone, używania wspólnie z innymi
+                              sprzętu do
+                              iniekcji) wynik ujemny oznacza, iż badany pacjent/pacjentka nie jest zakażona/y HIV. Ale
+                              nie musi
+                              tak być do końca życia. Wszystko zależy od tego, jak wiele będzie się wiedzieć o
+                              możliwościach
+                              zapobiegania zakażeniu i używania tych wiadomości w życiu.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseFive" aria-expanded="false"
+                           aria-controls="flush-collapseFive">
+                           <i class="bx bx-help-circle icon-help"></i>
+                           <h2>Co oznacza dodatni wynik testu?</h2>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseFive" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <p>
+                              Dodatni (pozytywny) wynik testu przesiewowego nie jest wynikiem ostatecznym. Zdarzają się
+                              wyniki
+                              fałszywie dodatnie (np. w przypadku ciąży, choroby autoimmunologicznej, szczepienia).
+                              Dodatni wynik
+                              testu przesiewowego zawsze musi zostać potwierdzony przy pomocy testu Western blot, który
+                              wykonuje
+                              kilka specjalistycznych laboratoriów w Polsce. W tym teście także poszukuje się
+                              przeciwciał, ale
+                              skierowanych przeciwko poszczególnym antygenom wirusa. Dopiero dodatni wynik testu Western
+                              blot
+                              upoważnia do stwierdzenia, iż pacjent jest zakażony HIV.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                           <i class="bx bx-help-circle icon-help"></i>
+                           <h2>Kto powinien zrobić sobie test?</h2>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseSix" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <p>
+                              <u>Każdy kto:</u>
+                           </p>
+                           <p class="fst-italic">- kiedykolwiek miał kontakt seksualny:</p>
+                           <ul class="list-akkordeon">
+                              <li>• z przypadkową osobą/osobami,</li>
+                              <li>• z osobą zakażoną HIV,</li>
+                              <li>• z partnerami/partnerkami mającymi wielu partnerów seksualnych,</li>
+                           </ul>
+                           <p class="fst-italic">- miał wielu partnerów/partnerek seksualnych,</p>
+                           <p class="fst-italic">- podczas kontaktów seksualnych nie stosował prezerwatyw,</p>
+                           <p class="fst-italic">- przebył jakąś z chorób przenoszonych drogą płciową,</p>
+                           <p class="fst-italic">- kiedykolwiek miał kontakty z osoba przyjmującą narkotyki w
+                              iniekcjach,</p>
+                           <p class="fst-italic">
+                              - przyjmował narkotyki w iniekcjach i używał do iniekcji narkotyków lub innych substancji
+                              sprzętu
+                              do iniekcji, z którego korzystały inne osoby,
+                           </p>
+                           <p class="fst-italic">
+                              - wykonywał np. tatuaż lub założenie kolczyków (piercing) przy użyciu niedostatecznie
+                              wysterylizowanego sprzętu,
+                           </p>
+                           <p class="fst-italic">
+                              - stracił kiedykolwiek kontrolę nad swoim zachowaniem (pod wpływem alkoholu, narkotyków
+                              lub innych
+                              środków zmieniających świadomość).
+                           </p>
+                           <p>
+                              Test powinny wykonać też kobiety planujące zajście w ciążę lub będące w ciąży, a także ich
+                              partnerzy.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                           aria-controls="flush-collapseSeven">
+                           <i class="bx bx-help-circle icon-help"></i>
+                           <h2>Gdzie najlepiej zrobić test?</h2>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <p>
+                              Testy na HIV można wykonać w większości laboratoriów diagnostycznych, za mniejszą lub
+                              większą
+                              odpłatnością. Nie są to testy anonimowe.
+                           </p>
+                           <p>
+                              Najlepszym miejscem do zrobienia testu są punkty konsultacyjno-diagnostyczne (PKD), w
+                              których testy
+                              wykonywane są bez skierowania, bezpłatnie i anonimowo. Test wykonuje się na hasło.
+                           </p>
+                           <p>
+                              W PKD, zanim zostanie pobrana krew na badanie, można się wiele dowiedzieć o rzeczywistym
+                              ryzyku
+                              zakażenia, sposobach uniknięcia zakażenia, o tym, czym tak naprawdę jest HIV i AIDS.
+                              Rozmowy
+                              przeprowadzane są przez doradców (najczęściej lekarzy lub psychologów), którzy uzyskali
+                              certyfikaty
+                              Krajowego Centrum ds. AIDS, a więc przez osoby kompetentne. Możliwe jest także zadanie
+                              dodatkowych
+                              pytań podczas odbierania wyniku. Doradcy wyjaśniają też osobom zakażonym, co mają dalej
+                              robić,
+                              gdzie zgłosić się w celu dalszej opieki zdrowotnej i ewentualnego leczenia.
+                           </p>
+                           <p>
+                              Jeśli podejmie się decyzję o wykonaniu testu, a PKD nie ma w miejscu zamieszkania, warto
+                              pojechać
+                              do znajdującego się najbliżej. Nie tylko spotka się osoby profesjonalne, ale też przyjazne
+                              ludziom,
+                              nie wyrażające uprzedzeń. Zachowa się też pełną anonimowość.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="700">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseEight" aria-expanded="false"
+                           aria-controls="flush-collapseEight">
+                           <i class="bx bx-help-circle icon-help"></i>
+                           <h2>Jak odbiera się wynik testu?</h2>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseEight" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <p>
+                              Test odbiera się osobiście, podając hasło przyjęte przed wykonaniem testu. Nie udziela się
+                              informacji o wyniku telefonicznie lub korespondencyjnie.
+                           </p>
+                           <p>
+                              Odbieranie wyniku jest okazją do wyjaśnienia wątpliwości, upewnienia się co do znaczenia
+                              wyniku. W
+                              przypadku wyniku dodatniego doradca poinformuje o dalszej drodze postępowania.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
          </div>
       </section>
@@ -208,7 +490,8 @@
                   </div>
                   <div
                      class="icon-boxes text-cards col-xl-7 col-lg-6 d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                     <a data-aos="fade-left" data-aos-delay="100" href={doc1} target="_blank" rel="noopener noreferrer">
+                     <a data-aos="fade-left" data-aos-delay="100" href="doc/3/Co-musisz-wiedziec_2020.pdf"
+                        target="_blank" rel="noopener noreferrer">
                         <div class="icon-box icon-box-2 icon-box-2-bg-1">
                            <div class="icon">
                               <i class="bi bi-file-pdf"></i>
@@ -221,7 +504,8 @@
                         </div>
                      </a>
 
-                     <a data-aos="fade-left" data-aos-delay="200" href={doc2} target="_blank" rel="noopener noreferrer">
+                     <a data-aos="fade-left" data-aos-delay="200" href="doc/3/HIVAIDS_O_co_kaman_2022.pdf"
+                        target="_blank" rel="noopener noreferrer">
                         <div class="icon-box icon-box-2 icon-box-2-bg-2">
                            <div class="icon">
                               <i class="bi bi-file-pdf"></i>
@@ -304,7 +588,7 @@
    </footer>
 
    <!-- SCRIPTS -->
-   <script defer src="js/bootstrap.min.js"></script>
+   <script defer src="js/bootstrap.bundle.min.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
