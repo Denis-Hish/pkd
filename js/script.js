@@ -244,7 +244,7 @@ window.addEventListener('load', () => {
    preloader.classList.add('hidden');
    setTimeout(() => {
       preloader.remove();
-   }, 600);
+   }, 0);
 });
 
 AOS.init();
