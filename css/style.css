@@ -1788,7 +1788,7 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.175);
 }
 .steps .carousel-block .carousel .carousel-caption {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   right: 0;
@@ -1797,12 +1797,15 @@ section {
   height: 8rem;
   background-color: rgba(255, 255, 255, 0.75);
 }
+.steps .carousel-block .carousel .carousel-caption p {
+  padding: 0 1rem;
+}
 @media (max-width: 992px) {
   .steps .carousel-block {
     width: 100%;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .steps .carousel-caption p {
     font-size: 0.8rem;
   }

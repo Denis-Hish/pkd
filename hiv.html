@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="PUNKT KONSULTACYJNO-DIAGNOSTYCZNY - PODSTAWOWE INFORMACJE. Zapraszamy do korzystania z poradnictwa i testowania w kierunku zakażenia wirusem HIV, HCV i kiły. Badania są anonimowe, bezpłatne i nie wymagają skierowania. Działalność finansowana ze środków Krajowego Centrum ds. AIDS. Punkt pracuje we wtorki i czwartki. Kontakt telefoniczny pod nr 503 147 303. Rejestracja NZOZ nie udziela informacji na temat testowania w kierunku zakażenia wirusem HIV, HCV i kiły. Więcej informacji na stronie Krajowego Centrum ds. AIDS. Szukasz odpowiedzi na trudne pytania, potrzebujesz informacji - napisz lub zadzwoń. Ogólnopolski telefon zaufania HIV/AIDS 800 888 448. CO TO JEST HIV I AIDS? HIV to wirus upośledzenia odporności. AIDS to zespół nabytego upośledzenia odporności, pojawiający się po wielu latach zakażenia HIV. JAK MOŻNA SIĘ ZAKAZIĆ HIV? Istnieją 3 drogi przenoszenia wirusa HIV: krew, kontakty seksualne oraz z matki na dziecko. TEST NA OBECNOŚĆ HIV. Zakażenie HIV rozpoznać można po wykonaniu testu w kierunku obecności przeciwciał anty-HIV. LECZENIE HIV/AIDS. Publikacje i broszury dla osób zakażonych wirusem HIV. INNE ZAKAŻENIA I CHOROBY PRZENOSZONE DROGĄ PŁCIOWĄ. Ulotki dotyczące zakażeń przenoszonych drogą płciową. Więcej informacji na stronie Krajowego Centrum ds. AIDS." />
+   <link href="img/icons/favicon.ico" rel="icon">
+   <title>Punkt Konsultacyjno-Diagnostyczny</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script defer src="js/script.js"></script>
+
+   <!-- STYLES -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- Vendor CSS Files -->
+   <link href="css/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+   <link href="css/vendor/animate.css/animate.min.css" rel="stylesheet">
+   <link href="css/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+   <link href="css/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="css/vendor/remixicon/remixicon.css" rel="stylesheet">
+   <link href="css/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+<body>
+   <!-- HEADER -->
+   <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container">
+         <div class="contact-info d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo-pkd logo me-auto">
+               <img src='img/logo.png' alt="Logo" class="img-fluid" />
+            </a>
+            <h1 class="title logo me-auto">
+               <a href="/">Punkt Konsultacyjno-Diagnostyczny</a>
+            </h1>
+            <a class="btn-tel" href="tel:+48503147303">
+               <i class="bi bi-telephone"></i>503 147 303
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+         <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+               <li>
+                  <a class="nav-link scrollto" href="/" onClick={handleMobileNavItemClick}>
+                     STRONA GŁÓWNA
+                  </a>
+               </li>
+               <li>
+                  <a class="nav-link scrollto" href="news.html" onClick={handleMobileNavItemClick}>
+                     AKTUALNOŚCI
+                  </a>
+               </li>
+               <li>
+                  <a class="nav-link scrollto" href="what.html" onClick={handleMobileNavItemClick}>
+                     HIV I AIDS
+                  </a>
+               </li>
+               <li>
+                  <a class="nav-link scrollto" href="hov.html" onClick={handleMobileNavItemClick}>
+                     SPOSOBY ZAKAŻENIA
+                  </a>
+               </li>
+               <li>
+                  <a class="nav-link scrollto" href="hiv.html" onClick={handleMobileNavItemClick}>
+                     TEST NA OBECNOŚĆ HIV
+                  </a>
+               </li>
+               <li>
+                  <a class="nav-link scrollto" href="treatments.html" onClick={handleMobileNavItemClick}>
+                     LECZENIE HIV/AIDS
+                  </a>
+               </li>
+               <li>
+                  <a class="nav-link scrollto" href="diseases.html" onClick={handleMobileNavItemClick}>
+                     INNE ZAKAŻENIA I CHOROBY
+                  </a>
+               </li>
+               <li>
+                  <a class="nav-link scrollto" href="materials.html" onClick={handleMobileNavItemClick}>
+                     MATERIAŁY EDUKACYJNE
+                  </a>
+               </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+         </nav>
+      </div>
+   </header>
+
+   <!-- HIV TEST -->
+   <section class="test-hiv">
+      <div class="container">
+         <div class="section-title mt-10">
+            <h2 data-aos="fade-down">TEST NA OBECNOŚĆ HIV</h2>
+         </div>
+
+         <div class="cards-hiv">
+            <div data-aos="fade-up" class="card-hiv">
+               <div class="card-hiv-img">
+                  <img src="img/5/hiv-test-1.jpg" alt="Hiv Test" />
+               </div>
+               <div class="card card-hiv-content">
+                  <p>
+                     <b>
+                        Zakażenie HIV rozpoznać można tylko po wykonaniu testu w kierunku obecności przeciwciał
+                        anty-HIV.
+                     </b>
+                     W innych badaniach laboratoryjnych wykonywanych z różnych przyczyn, np. w ramach badań
+                     okresowych w pracy, nie można stwierdzić zmian, które świadczyłyby o zakażeniu HIV.
+                     Powszechnie dostępne w laboratoriach diagnostycznych są testy wykrywające obecność
+                     przeciwciał przeciwko wirusom HIV-1 i HIV-2, opartych na metodzie ELISA.
+                  </p>
+               </div>
+            </div>
+
+            <div data-aos="fade-up" class="card-hiv">
+               <div class="card-hiv-img">
+                  <img src="img/5/hiv-test-2.jpg" alt="Hiv Test" />
+               </div>
+               <div class="card card-hiv-content">
+                  <p>
+                     <b>Wynik ujemny (negatywny)</b> oznacza, że nie odnaleziono przeciwciał anty-HIV. Jeśli
+                     badanie wykonano przed upływem 6 tygodni od potencjalnego momentu zakażenia, wówczas wynik
+                     testu może być fałszywie ujemny. Nie można bowiem wykluczyć, iż doszło do zakażenia, a tylko
+                     nie powstała dostatecznie duża ilość przeciwciał przeciwko wirusowi, by zostały wykryte przez
+                     test. Ten okres od zakażenia do momentu pojawiania się przeciwciał anty-HIV nosi nazwę
+                     okienka serologicznego. Jeśli od ryzykownego zachowania minęło 12 tygodni i więcej, a wynik
+                     testu jest ujemny, oznacza to, iż w 100% nie doszło do zakażenia.
+                  </p>
+               </div>
+            </div>
+
+            <div data-aos="fade-up" class="card-hiv">
+               <div class="card-hiv-img">
+                  <img src="img/5/hiv-test-3.jpg" alt="Hiv Test" />
+               </div>
+               <div class="card card-hiv-content">
+                  <p>
+                     <b>Wynik dodatni (pozytywny)</b> testu ELISA nie dowodzi jeszcze zakażenia. Wynik taki musi
+                     zostać potwierdzony, gdyż zdarzają się wyniki fałszywie dodatnie. Potwierdzenia dokonuje się
+                     przy pomocy testu Western blot, który wykonuje kilka specjalistycznych laboratoriów w Polsce.
+                     W tym teście, także poszukuje się przeciwciał, ale skierowanych przeciwko poszczególnym
+                     antygenom wirusa.
+                     <b>
+                        się przeciwciał, ale skierowanych przeciwko poszczególnym antygenom wirusa. Dopiero
+                        dodatni wynik testu Western blot upoważnia do stwierdzenia, iż pacjent jest zakażony HIV.
+                        się przeciwciał, ale skierowanych przeciwko poszczególnym antygenom wirusa.
+                     </b>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="steps section-bg">
+      <div class="container">
+         <div class="section-title">
+            <h2 data-aos="fade-down">O krokach, które należy podjąć</h2>
+            <p>
+               po wykryciu zakażenia wirusem HIV poinformuje Cię doradca w naszym Punkcie przy wydawaniu wyniku
+               testu.
+            </p>
+         </div>
+         <h4 class="title-carousel text-center">
+            <i class="i-icon bi bi-exclamation-circle me-2"></i>
+            Pamiętaj:
+         </h4>
+
+         <div data-aos="flip-left" class="carousel-block">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-dark slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                     aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                     aria-label="Slide 4"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                     <img src="img/carousel/carousel-1.jpg" class="d-block w-100" alt="First slide">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>
+                           To, że wiesz o tym, że jesteś zakażony HIV daje Ci możliwość
+                           kontrolowania sytuacji. Ale żeby kontrolować sytuację musisz
+                           też trochę wiedzieć o HIV i AIDS.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                     <img src="img/carousel/carousel-2.jpg" class="d-block w-100" alt="Second slide">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>
+                           Dzięki temu wiesz, że możesz monitorować przebieg zakażenia,
+                           zwolnić jego postęp i zapobiec wystąpieniu chorób związanych
+                           za infekcją HIV.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                     <img src="img/carousel/carousel-3.jpg" class="d-block w-100" alt="Third slide">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>
+                           Możesz uchronić przed zakażaniem Twoją partnerkę/partnera
+                           seksualnego.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                     <img src="img/carousel/carousel-4.jpg" class="d-block w-100" alt="Fourth slide">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>Możesz mieć zdrowe dzieci.</p>
+                     </div>
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <section class="brochure-question">
+      <div class="container">
+         <div class="section-title">
+            <h2 data-aos="fade-down" class="text-center">
+               Poniżej ulotka
+            </h2>
+         </div>
+
+         <p class="text-center fst-italic">
+            informująca na temat kroków, które należy podjąć
+            <b> po rozpoznaniu zakażenia HIV</b>
+         </p>
+
+         <div data-aos="fade-down" data-aos-delay="100" class="text-center brochure-btn download-file">
+            <a href="doc/5/kcdsaids_broszura_pkd_plus_a7_web.pdf" target="_blank" rel="noopener noreferrer">
+               <i class="bi bi-file-earmark-text"></i>
+            </a>
+         </div>
+
+         <p class="text-center fst-italic">
+            przekazuje odpowiedzi na często zadawane pytania, między innymi:
+         </p>
+
+         <div data-aos="fade-down" data-aos-delay="200" class="tabs-block">
+            <div class="card">
+
+
+               <ul class="nav nav-tabs mb-3">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="questions-1-tab" data-bs-toggle="tab" href="#questions-1">
+                        <i class="i-icon bi bi-1-circle me-2"></i>
+                        <span>pytanie</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="questions-2-tab" data-bs-toggle="tab" href="#questions-2">
+                        <i class="i-icon bi bi-2-circle me-2"></i>
+                        <span>pytanie</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="questions-3-tab" data-bs-toggle="tab" href="#questions-3">
+                        <i class="i-icon bi bi-3-circle me-2"></i>
+                        <span>pytanie</span>
+                     </a>
+                  </li>
+               </ul>
+
+               <div class="tab-content">
+                  <div class="tab-pane fade show active" id="questions-1">
+                     <div class="container-box-tab">
+                        <div class="image-box-tab">
+                           <img src="img/5/tabs/tabs1.jpg" alt="">
+                        </div>
+                        <div class="content-box-tab">
+                           <p class="text-center">Czy należy informować kogoś o wykrytym zakażeniu</p>
+                           <i class="i-icon bi bi-question-circle ms-2"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="questions-2">
+                     <div class="container-box-tab">
+                        <div class="image-box-tab">
+                           <img src="img/5/tabs/tabs2.jpg" alt="">
+                        </div>
+                        <div class="content-box-tab">
+                           <p class="text-center">Jak życie z HIV różni się od życia bez wirusa</p>
+                           <i class="i-icon bi bi-question-circle ms-2"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="questions-3">
+                     <div class="container-box-tab">
+                        <div class="image-box-tab">
+                           <img src="img/5/tabs/tabs3.jpg" alt="">
+                        </div>
+                        <div class="content-box-tab">
+                           <p class="text-center">Jak wygląda leczenie osób zakażonych HIV</p>
+                           <i class="i-icon bi bi-question-circle ms-2"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+
+         <figure>
+            <figcaption class="blockquote-footer text-end">
+               źródło: <cite title="Source Title">www.aids.gov.pl</cite>
+            </figcaption>
+         </figure>
+      </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer>
+      <div class="top-footer">
+         <div class="container">
+            <div class="contact-cards">
+               <a class="contact-card" href="tel:+48503147303">
+                  <i class="bi bi-telephone"></i>
+                  <p class="text-center">503-147-303</p>
+               </a>
+
+               <a class="contact-card" href="mailto:rejestracja@snr.org.pl">
+                  <i class="bi bi-envelope-at"></i>
+                  <p class="text-center">rejestracja@snr.org.pl</p>
+               </a>
+
+               <a class="contact-card" href="https://goo.gl/maps/aWWFrQvb7QWLpdQd8" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-geo-alt"></i>
+                  <p class="text-center">
+                     Karczówkowska 36 <br /> 25-711 Kielce
+                  </p>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="bottom-footer">
+         <div class="container">
+            <div class="logo-cards">
+               <div class="logo-card">
+                  <a class="logo-img" href="https://nzoz.nadziejarodzinie.org.pl/" target="_blank"
+                     rel="noopener noreferrer">
+                     <div class="img-box">
+                        <img src="img/logo-nzoz.png" alt="Logo NZOZ" />
+                     </div>
+                     <p class="text-center">
+                        Punkt Konsultacyjno-Diagnostyczny <br /> działa w ramach Poradni NZOZ "Nadzieja Rodzinie"
+                     </p>
+                  </a>
+               </div>
+
+               <div class="logo-card">
+                  <a class="logo-img" href="https://nadziejarodzinie.org.pl/" target="_blank" rel="noopener noreferrer">
+                     <div class="img-box">
+                        <img src="img/logo-snr.png" alt="Logo SNR" />
+                     </div>
+                     <p class="text-center">
+                        Prowadzonej przez <br /> Stowarzyszenie "Nadzieja Rodzinie"
+                     </p>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- SCRIPTS -->
+   <script defer src="js/bootstrap.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>
