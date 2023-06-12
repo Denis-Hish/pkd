@@ -231,4 +231,28 @@
    // new PureCounter();
 })();
 
+// Active link navbar menu
+// Получаем текущий путь URL
+const currentPath = window.location.pathname;
+
+// Обрезаем символ "/" в начале строки
+const trimmedCurrentPath = currentPath.substring(1);
+console.log('Текущая страница = ', trimmedCurrentPath);
+
+// Получаем все ссылки в навигационном меню
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Перебираем ссылки и проверяем их атрибут href
+navLinks.forEach((link) => {
+   // Обрезаем символ "/" в начале href ссылки
+   const trimmedHref = link.getAttribute('href');
+   console.log(trimmedHref);
+
+   // Проверяем, совпадает ли обрезанный путь URL с обрезанным href ссылки
+   if (trimmedHref === trimmedCurrentPath) {
+      // Если пути совпадают, добавляем класс "active" к ссылке
+      link.classList.add('active');
+   }
+});
+
 AOS.init();
