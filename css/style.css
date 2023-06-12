@@ -1905,9 +1905,6 @@ section {
   .brochure-question .tabs-block .card {
     padding: 1rem;
   }
-  .brochure-question .tabs-block .card .nav-link i {
-    margin-right: 0 !important;
-  }
   .brochure-question .tabs-block .card .nav-link p {
     display: none;
   }
@@ -2810,4 +2807,6 @@ footer p {
 }
 .notfoundpage h4 {
   font-size: 2rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* -- PRELOADER -- *//*# sourceMappingURL=style.css.map */
