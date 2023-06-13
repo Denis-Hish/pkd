@@ -20,7 +20,7 @@
       let selectEl = select(el, all);
       if (selectEl) {
          if (all) {
-            selectEl.forEach(e => e.addEventListener(type, listener));
+            selectEl.forEach((e) => e.addEventListener(type, listener));
          } else {
             selectEl.addEventListener(type, listener);
          }
@@ -40,14 +40,11 @@
    let navbarlinks = select('#navbar .scrollto', true);
    const navbarlinksActive = () => {
       let position = window.scrollY + 200;
-      navbarlinks.forEach(navbarlink => {
+      navbarlinks.forEach((navbarlink) => {
          if (!navbarlink.hash) return;
          let section = select(navbarlink.hash);
          if (!section) return;
-         if (
-            position >= section.offsetTop &&
-            position <= section.offsetTop + section.offsetHeight
-         ) {
+         if (position >= section.offsetTop && position <= section.offsetTop + section.offsetHeight) {
             navbarlink.classList.add('active');
          } else {
             navbarlink.classList.remove('active');
@@ -60,7 +57,7 @@
    /**
     * Scrolls to an element with header offset
     */
-   const scrollto = el => {
+   const scrollto = (el) => {
       let header = select('#header');
       let offset = header.offsetHeight;
 
@@ -231,30 +228,11 @@
 const currentPath = window.location.pathname;
 const trimmedCurrentPath = currentPath.substring(1);
 const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
    const trimmedHref = link.getAttribute('href');
    if (trimmedHref === trimmedCurrentPath) {
       link.classList.add('active');
    }
 });
-
-// PRELOADER
-<<<<<<< HEAD
-// window.onload = function () {
-//    document.body.classList.add('loaded_hiding');
-//    window.setTimeout(function () {
-//       document.body.classList.add('loaded');
-//       document.body.classList.remove('loaded_hiding');
-//    }, 3000);
-// };
-=======
-const preloader = document.querySelector('.preloader-pkd');
-window.addEventListener('load', () => {
-   preloader.classList.add('hidden');
-   setTimeout(() => {
-      preloader.remove();
-   }, 0);
-});
->>>>>>> 3f39b3af41d5e7c22f157211ac9a11f1389ccbc1
 
 AOS.init();
