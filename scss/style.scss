@@ -2876,12 +2876,13 @@ footer {
 
    @media (max-width: 576px) {
       .top-footer {
+         padding: 2.5rem 0 2.5rem;
          .contact-cards {
             flex-direction: column;
             align-items: flex-start;
             // align-items: center; // v.2
             align-content: center;
-            gap: 1.5rem;
+            gap: 2rem;
             .contact-card {
                flex-direction: row;
                // flex-direction: column; // v.2
