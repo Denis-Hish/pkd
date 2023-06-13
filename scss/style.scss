@@ -185,6 +185,7 @@ h6 {
             letter-spacing: 0.5px;
             font-family: 'Poppins', sans-serif;
             color: var(--color-violet);
+            white-space: nowrap;
          }
       }
    }
@@ -2027,6 +2028,7 @@ section {
 # Treatments
 --------------------------------------------------------------*/
 .treatments {
+   padding: 60px 0 0;
    .brochures {
       display: flex;
       flex-wrap: wrap;
@@ -2771,7 +2773,6 @@ footer {
 
       .contact-cards {
          display: flex;
-         // align-items: center;
          justify-content: space-between;
          flex-wrap: wrap;
          gap: 1rem;
@@ -2780,7 +2781,6 @@ footer {
             display: flex;
             flex: 1;
             align-items: center;
-            // justify-content: center;
             flex-direction: column;
             gap: 1.25rem;
 
@@ -3024,5 +3024,41 @@ footer {
    }
    h4 {
       font-size: 2rem;
+   }
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 9999;
+   overflow: hidden;
+   background: #fff;
+}
+
+#preloader:before {
+   content: '';
+   position: fixed;
+   top: calc(50% - 30px);
+   left: calc(50% - 30px);
+   border: 6px solid var(--color-blue-1);
+   border-top-color: #d1e6f9;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
    }
 }
